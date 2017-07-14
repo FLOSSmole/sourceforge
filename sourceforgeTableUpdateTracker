@@ -1,0 +1,10 @@
+-- for sf projects
+ALTER TABLE `sf_projects` CHANGE `proj_unixname` `proj_unixname` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '';
+ALTER TABLE `sf_projects` CHANGE `url` `url` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `sf_projects` CHANGE `real_url` `real_url` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `sf_projects` CHANGE `proj_long_name` `proj_long_name` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `sf_projects` CHANGE `proj_description` `proj_description` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `sf_projects` CHANGE `added_by_script` `added_by_script` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `sf_projects` CHANGE `takesdonations` `takesdonations` ENUM('y','n') CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+-- for
